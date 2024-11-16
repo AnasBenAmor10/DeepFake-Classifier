@@ -1,13 +1,14 @@
 from fastapi import FastAPI, File, UploadFile
 from PIL import Image
 import io
-from faceNest import load_model, process_image
+from FaceNest import load_model, process_image
 import torch
 
 app = FastAPI()
 
 # Load the model
-model = load_model("model/best_model.pth")
+model = load_model("../model/best_model.pth")
+
 
 @app.post("/predict/")
 async def predict(file: UploadFile = File(...)):

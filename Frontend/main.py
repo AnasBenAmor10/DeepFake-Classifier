@@ -15,7 +15,7 @@ if uploaded_file is not None:
 
         # Send the image to the backend for prediction
         response = requests.post(
-            "http://127.0.0.1:8000/predict/",
+            "http://localhost:8000/predict/",
             files={"file": uploaded_file.getvalue()},
         )
 
