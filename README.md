@@ -15,10 +15,7 @@ This project is an application designed to classify images as either "AI-generat
 - [Setup Instructions](#setup-instructions)
   - [Backend](#backend-setup)
   - [Frontend](#frontend-setup)
-- [Usage](#usage)
 - [Model Architecture](#model-architecture)
-- [Future Improvements](#future-improvements)
-- [License](#license)
 
 ---
 
@@ -47,7 +44,7 @@ This project is an application designed to classify images as either "AI-generat
 ```plaintext
 project/
 │
-├── backend/
+├── api/
 │   ├── faceNest.py          # Model definition and utilities
 │   ├── main.py              # FastAPI backend
 │   ├── requirements.txt     # Backend dependencies
